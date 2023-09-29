@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Starting with CSS</title>
+</head>
+<style>
+	.container{
+		height:300px;
+		aspect-ratio: 1/1;
+		margin: 1rem;
+		display: inline-block;
+	}
+	#rectangle-1{
+		background-color: gray;
+	}
+	#rectangle-2{
+        background-color: blue;
+    }
+    #rectangle-3{
+        background-color: yellow;
+    }
+    #rectangle-4{
+        background-color: green;
+    }
+</style>
+<body>
+	<div class="container" id="rectangle-1" style="background-color: red;"></div>  <!-- "rectangle-1" is targeted with inline, internal and external CSS. Here, inline style overwrites all the other styles because inline styles are read from top to bottom -->
+	<div class="container" id="rectangle-2"></div>
+	<div class="container" id="rectangle-3"></div>
+	<div class="container" id="rectangle-4"></div>
+</body>
+</html>
